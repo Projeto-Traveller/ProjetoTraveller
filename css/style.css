@@ -7,6 +7,21 @@ body {
     position: relative;
     display: grid;
 }
+.barra{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-around;
+}
+.contato, .redes{
+    display: flex;
+    gap: 2rem;
+    margin: 10px 0 0 0;
+    color: #7d7d7d;
+}
+.redes, .redes a{
+    list-style: none;
+    color: #7d7d7d;
+}
 .titulo-modifier {
     color: #468000;
 }
@@ -24,6 +39,35 @@ body {
 .menu{
     filter: invert(98%) sepia(2%) saturate(731%) hue-rotate(220deg) brightness(121%) contrast(100%);
 }
+.navlink-li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+.login-b{
+    color: white;
+    background-color: #468000;
+    border: 1px solid #468000;
+    border-radius: 5px;
+    align-items: center;
+}
+@media(min-width: 700px){
+    .menu{
+        display: none;
+    }
+}
+@media(max-width: 700px){
+    .navlink{
+        display: none;
+    }
+    .barra{
+        display: none;
+    }
+}
+
 header> .container-fluid{
     display: flex;
     position: absolute;
@@ -136,6 +180,9 @@ main > .container-fluid{
     .banner {
         height: 2%;
     }
+    .banner-2{
+        height: 280px;
+    }
 }
 article{
     margin-top: 48px;
@@ -222,18 +269,14 @@ article{
 
 footer{
     font-family: 'Poppins', sans-serif;
-    position: relative;
+    position: absolute;
     width: 100%;
-    background: gray;
-    min-height: 100px;
-    padding: 20px 50px;
+    bottom: 0;
+    background-color: gray;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
-footer .icones, 
-footer .menu{
+.f-icones, .f-menu{
     position: relative;
     display: flex;
     justify-content: center;
@@ -241,18 +284,17 @@ footer .menu{
     margin: 10px;
     flex-wrap: wrap;
 }
-footer .icones li,
-footer .menu li{
+.f-icones li, .f-menu li{
     list-style: none;
 }
-footer .icones li a{
+.f-icones li a{
     font-size: 1.3em;
     color: white;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
 }
-footer .menu li a{
+.f-menu li a{
     font-size: 1.2em;
     color: white;
     margin: 0 10px;
@@ -269,7 +311,7 @@ footer p{
     margin-bottom: 10px;
     font-size: 1.4em;
 }
-.detalhes{
+.f-detalhes{
     margin: 0;
     position: relative;
     width: 100%;
@@ -282,7 +324,11 @@ footer p{
     flex-direction: column;
     margin-bottom: -40px;
 }
-.detalhes a{
+.fdetalhes a{
     color: white;
     text-decoration: none;
+}
+.banner-2{
+    width: 100%;
+    height: 600px;
 }
