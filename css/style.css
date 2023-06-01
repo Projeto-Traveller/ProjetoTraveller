@@ -1,3 +1,6 @@
+:root {
+    font-family: "Poppins", sans-serif;
+}
 body {
     margin: 16px;
     font-family: "Poppins", sans-serif;
@@ -39,51 +42,28 @@ body {
 .menu{
     filter: invert(98%) sepia(2%) saturate(731%) hue-rotate(220deg) brightness(121%) contrast(100%);
 }
-.navlink-li{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    color: white;
-    gap: 1.5rem;
-    margin-top: 20px;
-}
 .login-b{
     color: white;
     background-color: #468000;
     border: 1px solid #468000;
     border-radius: 5px;
-    align-items: center;
-}
-@media(min-width: 700px){
-    .menu{
-        display: none;
-    }
 }
 @media(max-width: 700px){
-    .navlink{
-        display: none;
-    }
     .barra{
         display: none;
     }
 }
-
-header> .container-fluid{
-    display: flex;
-    position: absolute;
-    height: 46px;
-    align-items: center;
-    justify-content: space-between;
-}
 .sand{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-.nav{
+    background-color: black;
+    height: 50px;
+    width: 50px;
     border-right: solid white 1px;
     padding-right: 1rem; 
     margin-bottom: 2px;
+}
+.navbar{
+    /* background-color: black; */
+    font-family: 'Poppins', sans-serif;
 }
 .pais{
     background-color: green;
@@ -93,14 +73,17 @@ header> .container-fluid{
     padding: 0 5px;
     margin-top: 3px;
 }
-main > .container-fluid{
-    height: 600px;
+header{
     background-image: url(../assets/hero.jpg);
+}
+header > .container-fluid{
+    height: 600px;
     background-repeat: norepeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     display: grid;
     gap: 0;
+    margin-top: -60px;
 }
 .hero{
     color: white;
@@ -166,7 +149,7 @@ main > .container-fluid{
 .banner {
     height: 15%;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
 }
 @media (min-width: 768px){
     .col-md{
@@ -178,10 +161,11 @@ main > .container-fluid{
         display: flex;
     }
     .banner {
-        height: 2%;
+        display: none;
+        height: 0px;
     }
     .banner-2{
-        height: 280px;
+        height: 220px !important;
     }
 }
 article{
@@ -244,7 +228,7 @@ article{
     text-shadow: -1px 00 0 #7d7d7d, 1px 0 0 #7d7d7d, -1px 0 0 #7d7d7d, 1px 0 0 #7d7d7d;
 }
 .call-b {
-	width: 400px;
+    width: 400px;
 	height: 51px;
 	color: white;
 	background-color: rgb(70, 128, 0);
@@ -267,9 +251,12 @@ article{
     justify-content: center;
 }
 
+.banner-2{
+    width: 100%;
+    height: 600px;
+}
 footer{
     font-family: 'Poppins', sans-serif;
-    position: absolute;
     width: 100%;
     bottom: 0;
     background-color: gray;
@@ -312,9 +299,7 @@ footer p{
     font-size: 1.4em;
 }
 .f-detalhes{
-    margin: 0;
     position: relative;
-    width: 100%;
     background: #464444;
     min-height: 100px;
     padding: 20px 50px;
@@ -322,13 +307,8 @@ footer p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: -40px;
 }
 .fdetalhes a{
     color: white;
     text-decoration: none;
-}
-.banner-2{
-    width: 100%;
-    height: 600px;
 }
