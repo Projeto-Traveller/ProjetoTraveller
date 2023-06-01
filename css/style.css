@@ -39,7 +39,7 @@ body {
 .titulo a:hover{
     text-decoration: none;
 }
-.menu{
+.icon-w{
     filter: invert(98%) sepia(2%) saturate(731%) hue-rotate(220deg) brightness(121%) contrast(100%);
 }
 .login-b{
@@ -66,12 +66,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .pais{
-    background-color: green;
+    background-image: url(../assets/BR.jpg);
+    background-position: center;
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    padding: 0 5px;
-    margin-top: 3px;
 }
 header{
     background-image: url(../assets/hero.jpg);
@@ -90,11 +89,6 @@ header > .container-fluid{
     padding: 50% 0 10%;
     box-sizing: border-box;
     height: 25rem;
-}
-@media (min-width: 800px){
-    .hero{
-        padding: 400px 0 80px;
-    }
 }
 .hero-text > p {
     font-size: 15px;
@@ -151,6 +145,11 @@ header > .container-fluid{
     width: 100%;
     background-color: transparent;
 }
+@media (min-width: 800px){
+    .hero{
+        padding: 400px 0 80px;
+    }
+}
 @media (min-width: 768px){
     .col-md{
         line-height: 10px;
@@ -165,7 +164,7 @@ header > .container-fluid{
         height: 0px;
     }
     .banner-2{
-        height: 220px !important;
+        height: 100px !important;
     }
 }
 article{
@@ -238,13 +237,17 @@ article{
 }
 .blog{
     height: 400px;
-    width: 100%;
+    border-radius: 20px;
     display: flex;
     background-image: url(../assets/blog.jpg);
     background-position: center;
     background-repeat: norepeat;
     background-size: cover;
     align-items: center;
+}
+.b-text{
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 .container{
     display: flex;
@@ -253,62 +256,69 @@ article{
 
 .banner-2{
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
 footer{
-    font-family: 'Poppins', sans-serif;
     width: 100%;
     bottom: 0;
     background-color: gray;
     display: flex;
     flex-direction: column;
+    padding-top: 5%;
 }
-.f-icones, .f-menu{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    flex-wrap: wrap;
+footer a{
+    text-decoration: none;
+    color: white;
 }
-.f-icones li, .f-menu li{
+.f-menu{
+    font-family: 'Poppins', sans-serif;
     list-style: none;
-}
-.f-icones li a{
-    font-size: 1.3em;
-    color: white;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-}
-.f-menu li a{
-    font-size: 1.2em;
-    color: white;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    margin-bottom: 20px;
-}
-footer p{
-    text-align: center;
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1.4em;
-}
-.f-detalhes{
-    position: relative;
-    background: #464444;
-    min-height: 100px;
-    padding: 20px 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    gap: 2rem;
 }
-.fdetalhes a{
+.copy{
+    font-family: 'Poppins', sans-serif;
     color: white;
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.footer-info{
+    background-color: #464646;
+}
+.f-tel, .f-redes, .f-icones, .f-email{
+    font-family: 'Poppins',sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 15px;
+    color: white;
+}
+.f-contato{
+    display: grid;
+}
+.f-icones a{
+    color: white;
+}
+.f-bottom{
+    margin: 20px 0;
+}
+@media (min-width: 900px){
+    .footer-links{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+    }
+    .f-contato{
+        display: flex;
+        gap: 2rem;
+    }
+    .f-bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
 }

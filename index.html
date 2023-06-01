@@ -29,13 +29,14 @@
 <body>
     <div class="barra">
         <div class="contato">
-            <p><img src="assets/icons/phone.svg" alt="Número de contato"> + 55 11 91234-5678</p>
+            <p class="fw-light"><img src="assets/icons/phone.svg" alt="Número de contato"> + 55 11 91234-5678</p>
             <p><img src="assets/icons/mail.svg" alt="E-mail"> sac@gullivertraveller.com</p>
         </div>
         <div class="redes">
             <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><div class="pais"></div></li>
         </div>
     </div>
     <header>
@@ -49,7 +50,7 @@
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
-                        <img src="./assets/icons/menu.svg" alt="menu" class="menu">
+                        <img src="./assets/icons/menu.svg" alt="menu" class="menu icon-w">
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -211,8 +212,8 @@
                 </div>
             </article>
         </section>
-        <section class="blog">
-            <div class="container-sm">
+        <section class="blog container-xl">
+            <div class="container-sm b-text">
                 <h3 class="text-center">Não encontrou o que procurava?</h3>
                 <p class="text-center">Busque em nosso blog por dias de destinos, ponto turísticos,roteiros e muito
                     mais!</p>
@@ -227,23 +228,37 @@
     <div class="banner-2"></div>
     <footer>
         <div class="container-fluid">
-            <ul class="f-menu">
-                <li><a href="">Hotéis</a></li>
-                <li><a href="">Passagens</a></li>
-                <li><a href="">Locais</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-            <p>Gulliver Traveller © 2023</p>
-
-            <div class="container-fluid f-detalhes">
-                <a href=""><i class="fa-solid fa-phone"> + 55 11 91234-5678</i></a>
-                <a href=""><i class="fa-solid fa-envelope"> sac@gullivertraveller.com</i></a>
-
-                <ul class="f-icones">
-                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <div class="footer-links">
+                <ul class="f-menu">
+                    <li><a href="">Hotéis</a></li>
+                    <li><a href="">Passagens</a></li>
+                    <li><a href="">Locais</a></li>
+                    <li><a href="">Blog</a></li>
                 </ul>
+                <div class="copy">
+                    <p>Gulliver Traveller © 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="container-fluid footer-i">
+                <div class="f-bottom">
+                    <div class="f-contato">
+                        <div class="f-tel">
+                            <p><img class="icon-w" src="assets/icons/phone.svg" alt="Número de contato"> + 55 11 91234-5678</p>
+                        </div>
+                        <div class="f-email">
+                            <p><img class="icon-w" src="assets/icons/mail.svg" alt="E-mail"></i> sac@gullivertraveller.com</p>
+                        </div>
+                    </div>
+                    <div class="f-redes">
+                        <ul class="f-icones">
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
