@@ -18,10 +18,10 @@ namespace api_traveller.Controllers
             _gulliverContext = gulliverContext;
         }
 
-        [HttpGet("PorHotel")]
-        public IEnumerable<Disponibilidade> GetDisponibilidade(int hotelId)
+        [HttpGet("PorNome")]
+        public IEnumerable<Hotel> GetHotelPorNome(string cidade)
         {
-            return _gulliverContext.Disponibilidades.Where(hotel => hotel.HotelId == hotelId);
+            return _gulliverContext.Hoteis.Where(hotel => hotel.Cidade.ToUpperInvariant().Contains(cidade.ToUpperInvariant()));
         }
 
         [HttpPost]

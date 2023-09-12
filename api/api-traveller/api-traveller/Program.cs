@@ -15,8 +15,13 @@ builder.Services.AddScoped<GulliverContext>();
 builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles
 );
+builder.Services.AddCors(policyBuilder =>
+    policyBuilder.AddDefaultPolicy(policy =>
+        policy.WithOrigins("*").AllowAnyHeader().AllowAnyHeader())
+);
 
 var app = builder.Build();
+app.UseCors();
 
 using (var scope = app.Services.CreateScope())
 {

@@ -41,3 +41,41 @@ D:\Repositorios\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.
 D:\Repositorios\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Repositorios\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 D:\Repositorios\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\appsettings.json
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\api-traveller.exe
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\api-traveller.deps.json
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\api-traveller.runtimeconfig.json
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\api-traveller.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\api-traveller.pdb
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.csproj.AssemblyReference.cache
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.AssemblyInfoInputs.cache
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.AssemblyInfo.cs
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.csproj.CoreCompileInputs.cache
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\scopedcss\bundle\api-traveller.styles.css
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.csproj.CopyComplete
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\refint\api-traveller.dll
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.pdb
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\api-traveller.genruntimeconfig.cache
+C:\Users\Jin\Documents\FIAP\Fase 3\ProjetoTraveller\api\api-traveller\api-traveller\obj\Debug\net6.0\ref\api-traveller.dll
