@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using static api_traveller.Controllers.HoteisController;
 
 namespace api_traveller.Controllers
@@ -17,16 +18,16 @@ namespace api_traveller.Controllers
             _gulliverContext = gulliverContext;
         }
 
+        [HttpGet("PorHotel")]
+        public IEnumerable<Disponibilidade> GetDisponibilidade(int hotelId)
+        {
+            return _gulliverContext.Disponibilidades.Where(hotel => hotel.HotelId == hotelId);
+        }
+
         [HttpGet]
         public IEnumerable<Hotel> GetTodos()
         {
             return _gulliverContext.Hoteis;
-        }
-
-        [HttpGet("PorNome")]
-        public IEnumerable<Hotel> GetHotelPorNome(string cidade)
-        {
-            return _gulliverContext.Hoteis.Where(hotel => hotel.Cidade.ToUpperInvariant().Contains(cidade.ToUpperInvariant()));
         }
 
         [HttpPost]
@@ -37,3 +38,4 @@ namespace api_traveller.Controllers
         }
     }
 }
+
