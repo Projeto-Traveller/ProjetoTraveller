@@ -1,7 +1,7 @@
 
 function httpGet() {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "https://localhost:7142/Hoteis/PorNome?cidade=sa", false); // false for synchronous request
+    xmlHttp.open("GET", "https://api-traveller.azurewebsites.net/Hoteis/PorNome?cidade=sa", false); // false for synchronous request
     xmlHttp.send(null);
     console.log(xmlHttp.responseText);
 
