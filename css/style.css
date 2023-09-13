@@ -186,11 +186,11 @@ article{
 .hoteis{
     width: 90%;
     height: 350px;
-    background-color: black;
+    background-color: transparent;
     margin: 32px 0;
     display: flex;
     gap: 20px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
     flex-wrap: nowrap;
 }
