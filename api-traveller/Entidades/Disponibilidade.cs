@@ -10,7 +10,6 @@ namespace api_traveller.Controllers
             public int Id { get; set; }
             public int HotelId { get; set; }
             public DateTime Data { get; set; }
-            public decimal Preco { get; set; }            
         }
     }
 }

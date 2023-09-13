@@ -22,6 +22,7 @@ namespace api_traveller.Controllers
                             Id = 1,
                             Cidade = "Sao Paulo",
                             Nome = "Ibis",
+                            Preco = new Random().Next(100, 300)
                         },
 
                         new Hotel
@@ -29,6 +30,23 @@ namespace api_traveller.Controllers
                             Id = 2,
                             Cidade = "Sao Paulo",
                             Nome = "West Plaza",
+                            Preco = new Random().Next(100, 300)
+                        },
+
+                        new Hotel
+                        {
+                            Id = 3,
+                            Cidade = "Sao Paulo",
+                            Nome = "Tokyo Drift",
+                            Preco = new Random().Next(100, 300)
+                        },
+
+                        new Hotel
+                        {
+                            Id = 4,
+                            Cidade = "Sao Paulo",
+                            Nome = "International 12",
+                            Preco = new Random().Next(100, 300)
                         }
 
                     );
@@ -42,14 +60,12 @@ namespace api_traveller.Controllers
                             Id = 11,
                             HotelId = 1,
                             Data = DateTime.Now.AddDays(1),
-                            Preco = new Random().Next(100, 300)
                         },
                         new Disponibilidade
                         {
                             Id = 12,
                             HotelId = 2,
                             Data = DateTime.Now.AddDays(2),
-                            Preco = new Random().Next(100, 300)
                         }
                     );
 
