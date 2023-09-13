@@ -7,7 +7,8 @@ function httpGet() {
 
     let hoteis = JSON.parse(xmlHttp.responseText);
 
-    for (let i = 0; i <= hoteis.length; i++) {
+    for (let i = 0; i < hoteis.length; i++) 
+    {
         //     var label = document.createElement("label");
         //     label.innerHTML = hoteis[i].nome;
         // let div = document.createElement("div");
@@ -23,28 +24,73 @@ function httpGet() {
         //         <a href="#" class="btn btn-outline-secondary">Ver hotel</a>
         //     </div>
         // </div>
-        let divCard = document.createElement("div");
-        divCard.className = "card";
-        divCard.id = "card" + i;
 
-        let cardBody = document.createElement("div");
-        cardBody.className = "card-body";
-        cardBody.id = "cardBody" + i;
-
-        let cardText = document.createElement("p");
-
-        document.getElementById("cardBody" + i).appendChild(cardText);
-        document.getElementById("card" + i).appendChild(cardBody + i);
-        document.getElementById("cardHotel").appendChild(card + i);
+        var cardHotel = document.getElementById("cardHotel");
         
-        const box = document.createElement("div");
-        box.id = "box";
-        document.body.appendChild(box);
 
-        const button = document.createElement("button");
-        button.innerText = "Button";
-        button.id = "button-1";
-        box.appendChild(button);
+        var divCard = document.createElement("div");
+        divCard.className = "card";
+
+        var image = document.createElement("img");
+        image.src = "./assets/hotel.jpg";
+        image.className = "card-img-top";
+
+        divCard.appendChild(image);
+
+        var divCardBody = document.createElement("div");
+        divCardBody.className = "card-body";
+
+        var cardText = document.createElement("div");
+        cardText.innerText = hoteis[i].cidade;
+        cardText.className = "card-text";
+
+        divCardBody.appendChild(cardText);
+
+        var cardTitle = document.createElement("h5");
+        cardTitle.innerText = hoteis[i].nome;
+        cardTitle.className = "card-title";
+
+        divCardBody.appendChild(cardTitle);
+
+        var cardText2 = document.createElement("div");
+        cardText2.innerText = "Diárias a partir de ";
+        cardText2.className = "card-text";
+
+        var cardSpan = document.createElement("span");
+        cardSpan.innerText = "R$" + hoteis[i].preco;
+        cardSpan.className = "preco";
+
+        cardText2.appendChild(cardSpan);
+        divCardBody.appendChild(cardText2);
+
+        var button = document.createElement("a");
+        button.href = "#";
+        button.className = "btn btn-outline-secondary";
+        button.innerText = "Ver hotel";
+
+        divCardBody.appendChild(button);
+
+        divCard.appendChild(divCardBody);
+        cardHotel.appendChild(divCard);
+
+        // let cardBody = document.createElement("div");
+        // cardBody.className = "card-body";
+        // cardBody.id = "cardBody" + i;
+
+        // let cardText = document.createElement("p");
+
+        // document.getElementById("cardBody" + i).appendChild(cardText);
+        // document.getElementById("card" + i).appendChild(cardBody + i);
+        // document.getElementById("cardHotel").appendChild(card + i);
+        
+        // const box = document.createElement("div");
+        // box.id = "box";
+        // document.body.appendChild(box);
+
+        // const button = document.createElement("button");
+        // button.innerText = "Button";
+        // button.id = "button-1";
+        // box.appendChild(button);
 
     }
 
