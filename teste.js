@@ -7,26 +7,9 @@ function httpGet() {
 
     let hoteis = JSON.parse(xmlHttp.responseText);
 
-    for (let i = 0; i < hoteis.length; i++) 
-    {
-        //     var label = document.createElement("label");
-        //     label.innerHTML = hoteis[i].nome;
-        // let div = document.createElement("div");
-        // div.innerHTML = hoteis[i].nome;
-        // div.appendChild(label);
-        // document.getElementById("cardHotel").appendChild(div);
-        //     <div class="card">
-        //     <img src="./assets/hotel.jpg" class="card-img-top" alt="...">
-        //     <div class="card-body">
-        //         <p class="card-text">São Paulo</p>
-        //         <h5 class="card-title">Hotel Lorem Ipsum</h5>
-        //         <p class="card-text">Diárias a partir de <span class="preco">R$154</span></p>
-        //         <a href="#" class="btn btn-outline-secondary">Ver hotel</a>
-        //     </div>
-        // </div>
-
+    for (let i = 0; i < hoteis.length; i++) {
         var cardHotel = document.getElementById("cardHotel");
-        
+
 
         var divCard = document.createElement("div");
         divCard.className = "card";
@@ -72,29 +55,69 @@ function httpGet() {
 
         divCard.appendChild(divCardBody);
         cardHotel.appendChild(divCard);
+    }
+    return xmlHttp.responseText
+}
+function httpGet2() {
+    var xmlHttp2 = new XMLHttpRequest();
+    xmlHttp2.open("GET", "https://localhost:7142/api/Viagens/PorNome?origem=sa", false); // false for synchronous request
+    xmlHttp2.send(null);
+    console.log(xmlHttp2.responseText);
 
-        // let cardBody = document.createElement("div");
-        // cardBody.className = "card-body";
-        // cardBody.id = "cardBody" + i;
+    let viagens = JSON.parse(xmlHttp2.responseText);
 
-        // let cardText = document.createElement("p");
+    for (let x = 0; x < viagens.length; x++) {
+        var cardViagem = document.getElementById("cardViagem");
 
-        // document.getElementById("cardBody" + i).appendChild(cardText);
-        // document.getElementById("card" + i).appendChild(cardBody + i);
-        // document.getElementById("cardHotel").appendChild(card + i);
-        
-        // const box = document.createElement("div");
-        // box.id = "box";
-        // document.body.appendChild(box);
 
-        // const button = document.createElement("button");
-        // button.innerText = "Button";
-        // button.id = "button-1";
-        // box.appendChild(button);
+        var divCard = document.createElement("div");
+        divCard.className = "card";
 
+        var image = document.createElement("img");
+        image.src = "./assets/hotel.jpg";
+        image.className = "card-img-top";
+
+        divCard.appendChild(image);
+
+        var divCardBody = document.createElement("div");
+        divCardBody.className = "card-body";
+
+        var cardText = document.createElement("div");
+        cardText.innerText = viagens[x].origem;
+        cardText.className = "card-text";
+
+        divCardBody.appendChild(cardText);
+
+        var cardTitle = document.createElement("h5");
+        cardTitle.innerText = viagens[x].destino;
+        cardTitle.className = "card-title";
+
+        divCardBody.appendChild(cardTitle);
+
+        var cardText2 = document.createElement("div");
+        cardText2.innerText = "Passagens apartir de ";
+        cardText2.className = "card-text";
+
+        var cardSpan = document.createElement("span");
+        cardSpan.innerText = "R$" + viagens[x].preco;
+        cardSpan.className = "preco";
+
+        cardText2.appendChild(cardSpan);
+        divCardBody.appendChild(cardText2);
+
+        var button = document.createElement("a");
+        button.href = "#";
+        button.className = "btn btn-outline-secondary";
+        button.innerText = "Comprar Passagem";
+
+        divCardBody.appendChild(button);
+
+        divCard.appendChild(divCardBody);
+        cardViagem.appendChild(divCard);
     }
 
-    return xmlHttp.responseText;
-
+    return xmlHttp2.responseText;
 }
-window.onload = httpGet();
+window.onload = httpGet(),httpGet2();
+
+
