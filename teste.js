@@ -1,20 +1,24 @@
 
-function httpGet() {
+let baseUrl = "https://api-traveller.azurewebsites.net";
+// let baseUrl = "https://localhost:7142/";
+let apiKey = "AIzaSyDvchNONgwXYd119ZmjJKEZKhHuiTbR8zQ";
+
+function getHoteis() {
 
     if (navigator.geolocation) {
-        return navigator.geolocation.getCurrentPosition(showPosition);
-      } else { 
+        return navigator.geolocation.getCurrentPosition(requestApiHoteis);
+    } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
-      }
     }
-    
-    function showPosition(position) 
-    {
-            
+}
+
+
+function requestApiHoteis(position) {
+
     var xmlHttp = new XMLHttpRequest();
-    
-    let url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + "," + position.coords.longitude +"&key=AIzaSyDvchNONgwXYd119ZmjJKEZKhHuiTbR8zQ"
-    
+
+    let url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + "," + position.coords.longitude + "&key=" + apiKey;
+
     xmlHttp.open("GET", url, false);
     xmlHttp.send(null);
 
@@ -54,17 +58,17 @@ function httpGet() {
             break;
         }
 
-        
+
     }
 
-    let location = { 
+    let location = {
         "city": city,
-        "country" : country,
+        "country": country,
         "countryCode": countryCode
     }
 
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "https://api-traveller.azurewebsites.net/Hoteis/PorNome?cidade=" + location.city, false); // false for synchronous request
+    xmlHttp.open("GET", baseUrl + "Hoteis/PorNome?cidade=" + location.city, false); // false for synchronous request
     xmlHttp.send(null);
     console.log(xmlHttp.responseText);
 
@@ -121,9 +125,10 @@ function httpGet() {
     }
     return xmlHttp.responseText
 }
-function httpGet2() {
+
+function getViagens() {
     var xmlHttp2 = new XMLHttpRequest();
-    xmlHttp2.open("GET", "https://localhost:7142/api/Viagens/PorNome?origem=sa", false); // false for synchronous request
+    xmlHttp2.open("GET", baseUrl + "api/Viagens/", false); // false for synchronous request
     xmlHttp2.send(null);
     console.log(xmlHttp2.responseText);
 
@@ -181,6 +186,31 @@ function httpGet2() {
 
     return xmlHttp2.responseText;
 }
-window.onload = httpGet(),httpGet2();
 
+document.addEventListener('readystatechange', event => {
+    switch (document.readyState) {
+        case "loading":
+            console.log("document.readyState: ", document.readyState,
+                `- The document is still loading.`
+            );
+            break;
+        case "interactive":
+            console.log("document.readyState: ", document.readyState,
+                `- The document has finished loading DOM. `,
+                `- "DOMContentLoaded" event`
+            );
+            break;
+        case "complete":
+            afterLoadPage();
+            console.log("document.readyState: ", document.readyState,
+                `- The page DOM with Sub-resources are now fully loaded. `,
+                `- "load" event`
+            );
+            break;
+    }
+});
 
+function afterLoadPage() {
+    getHoteis();
+    getViagens();
+}
