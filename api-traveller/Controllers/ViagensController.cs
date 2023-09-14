@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using api_traveller.Database;
+using api_traveller.Entidades;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_traveller.Controllers

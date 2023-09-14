@@ -57,15 +57,11 @@ function httpGet() {
         
     }
 
-    //   console.log("City: " + city + ", Country: " + country + ", Country Code: " + countryCode);
     let location = { 
         "city": city,
         "country" : country,
         "countryCode": countryCode
     }
-            
-
-    console.log(location);
 
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://api-traveller.azurewebsites.net/Hoteis/PorNome?cidade=" + location.city, false); // false for synchronous request
@@ -82,7 +78,7 @@ function httpGet() {
         divCard.className = "card";
 
         var image = document.createElement("img");
-        image.src = "./assets/hotel.jpg";
+        image.src = hoteis[i].source;
         image.className = "card-img-top";
 
         divCard.appendChild(image);
