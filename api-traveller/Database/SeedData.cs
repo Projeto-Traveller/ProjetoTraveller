@@ -74,4 +74,62 @@ namespace api_traveller.Controllers
             }
         }
     }
+    public partial class ViagensController
+    {
+        public static class SeedData
+        {
+            public static void Initialize2(IServiceProvider serviceProvider)
+            {
+                using (var context = new GulliverContext(serviceProvider.GetRequiredService<DbContextOptions<GulliverContext>>()))
+                {
+                    if (context.Viagens.Any())
+                    {
+                        return;
+                    }
+
+                    context.Viagens.AddRange
+                    (
+                        new Viagem
+                        {
+                            Id = 1,
+                            Tipo = "Aviao",
+                            Origem = "Sao Paulo",
+                            Data = DateTime.Now.AddDays(1),
+                            Destino = "Nova York",
+                            Preco = new Random().Next(1000, 3000)
+                        },
+                         new Viagem
+                         {
+                             Id = 2,
+                             Tipo = "Aviao",
+                             Origem = "Sao Paulo",
+                             Data = DateTime.Now.AddDays(1),
+                             Destino = "Mexico",
+                             Preco = new Random().Next(1000, 3000)
+                         },
+                          new Viagem
+                          {
+                              Id = 3,
+                              Tipo = "Aviao",
+                              Origem = "Sao Paulo",
+                              Data = DateTime.Now.AddDays(1),
+                              Destino = "Tokyo",
+                              Preco = new Random().Next(1000, 3000)
+                          },
+                           new Viagem
+                           {
+                               Id = 4,
+                               Tipo = "Onibus",
+                               Origem = "Sao Paulo",
+                               Data = DateTime.Now.AddDays(1),
+                               Destino = "Rio de Janeiro",
+                               Preco = new Random().Next(1000, 3000)
+                           }
+                    );
+
+                    context.SaveChanges();
+                }
+            }
+        }
+    }
 }
