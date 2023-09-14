@@ -216,7 +216,7 @@ article{
     font-size: 13px;
 }
 .card-body > .btn {
-    width: 250px;
+    width: 100%;
 }
 .destinos{
     height: 400px;
