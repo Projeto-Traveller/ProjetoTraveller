@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using api_traveller.Database;
+using api_traveller.Entidades;
 using Microsoft.AspNetCore.Mvc;
-using static api_traveller.Controllers.HoteisController;
 
 namespace api_traveller.Controllers
 {

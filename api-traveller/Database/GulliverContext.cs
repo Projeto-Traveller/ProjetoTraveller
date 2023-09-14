@@ -1,15 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata;
-using static api_traveller.Controllers.HoteisController;
-using static api_traveller.Controllers.ViagensController;
+﻿using api_traveller.Entidades;
+using Microsoft.EntityFrameworkCore;
 
-namespace api_traveller.Controllers;
-
-public partial class HoteisController
+namespace api_traveller.Database
 {
     public class GulliverContext : DbContext
     {
-        public GulliverContext(DbContextOptions<GulliverContext> options) : base(options) 
+        public GulliverContext(DbContextOptions<GulliverContext> options) : base(options)
         {
 
         }
@@ -21,24 +17,6 @@ public partial class HoteisController
 
         public DbSet<Hotel> Hoteis { get; set; }
         public DbSet<Disponibilidade> Disponibilidades { get; set; }
-    }
-}
-
-public partial class ViagensController
-{
-    public class GulliverContext : DbContext
-    {
-
-        public GulliverContext(DbContextOptions<GulliverContext> options) : base(options)
-        {
-
-        }
-
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-
-        }
-
         public DbSet<Viagem> Viagens { get; set; }
     }
 }
