@@ -31,9 +31,9 @@ namespace api_traveller.Controllers
         }
 
         [HttpPost]
-        public void PostHotel([FromBody] Hotel hotel)
+        public void PostHotel([FromBody] Disponibilidade disponibilidade)
         {
-            _gulliverContext.Hoteis.Add(hotel);
+            _gulliverContext.Disponibilidades.Add(disponibilidade);
             _gulliverContext.SaveChanges();
         }
     }
