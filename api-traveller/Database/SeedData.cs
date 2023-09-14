@@ -57,7 +57,7 @@ namespace api_traveller.Database
                         Id = 5,
                         Cidade = "Atibaia",
                         Nome = "Taua Resort",
-                        Source = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/a9/fe/2d/taua-hotel-atibaia.jpg",
+                        Source = "https://d18m3re1tsq8hv.cloudfront.net/wp-content/uploads/2020/02/viajar-resorts-area-externa-taua-hotel-atibaia-05.jpg",
                         Preco = new Random().Next(100, 300)
                     },
 
@@ -66,7 +66,7 @@ namespace api_traveller.Database
                         Id = 6,
                         Cidade = "Atibaia",
                         Nome = "Bourbon",
-                        Source = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/86/79/78/piscina-infantil.jpg",
+                        Source = "https://viajeseumundo.com/wp-content/uploads/2019/04/hotel-bourbon-atibaia-all-inclusive.jpg",
                         Preco = new Random().Next(100, 300)
                     },
 
@@ -75,7 +75,7 @@ namespace api_traveller.Database
                         Id = 7,
                         Cidade = "Atibaia",
                         Nome = "Eldorado",
-                        Source = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/25/b9/e0/hotel-e-piscina.jpg",
+                        Source = "https://cdn.panrotas.com.br/portal-panrotas-statics/media-files-cache/317322/90839c16ae77de8e0db976a02da35c92eldoradoatibaiaaerea2/0,68,1920,1146/1206,720,0.35/0/default.jpg",
                         Preco = new Random().Next(100, 300)
                     },
 
@@ -84,7 +84,7 @@ namespace api_traveller.Database
                         Id = 8,
                         Cidade = "Atibaia",
                         Nome = "Residence Resort",
-                        Source = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/a7/0c/99/atibaia-residence-hotel.jpg",
+                        Source = "https://s2-g1.glbimg.com/CWeltAPgWjOSb4DkegW83pnq904=/0x0:5760x3840/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/m/A/O4IR53QBSnn8ue1ffSxA/k9a3001.jpg",
                         Preco = new Random().Next(100, 300)
                     }
 
