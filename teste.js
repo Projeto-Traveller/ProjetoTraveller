@@ -1,5 +1,5 @@
 
-let baseUrl = "https://api-traveller.azurewebsites.net";
+let baseUrl = "https://api-traveller.azurewebsites.net/";
 // let baseUrl = "https://localhost:7142/";
 let apiKey = "AIzaSyDvchNONgwXYd119ZmjJKEZKhHuiTbR8zQ";
 
