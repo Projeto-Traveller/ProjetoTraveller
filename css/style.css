@@ -183,6 +183,331 @@ article > h4{
 article{
     padding: 50px 0;
 }
+.resultados{
+    width: 90%;
+    height: 350px;
+    background-color: transparent;
+    margin: 32px 0;
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+}
+.card{
+    width: 18rem;
+}
+.card-body > p , .card-body > h5{
+    margin: 4px 0;
+}
+.card-body>h5{
+    font-size: 20px;
+    font-weight: 650;
+    margin: 2px 0;
+}
+.card-body > p{
+    font-size: 11px;
+}
+.preco{
+    font-size: 13px;
+}
+.card-body > .btn {
+    width: 250px;
+}
+.destinos{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-image: url(../assets/destino.png);
+    background-position: center;
+    background-repeat: norepeat;
+    background-size: cover;
+    align-items: center;
+}
+.destinos > .container-sm{
+    color: white;
+    text-shadow: -1px 00 0 #7d7d7d, 1px 0 0 #7d7d7d, -1px 0 0 #7d7d7d, 1px 0 0 #7d7d7d;
+}
+.call-b {
+    width: 400px;
+	height: 51px;
+	color: white;
+	background-color: rgb(70, 128, 0);
+	border: 0px none transparent;
+	font-size: 15px;
+	border-radius: 10px;
+}
+.blog{
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    background-image: url(../assets/blog.jpg);
+    background-position: center;
+    background-repeat: norepeat;
+    background-size: cover;
+    align-items: center;
+}
+.b-text{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-2{
+    width: 100%;
+    height: 400px;
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.f-menu{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.copy{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.footer-info{
+    background-color: #464646;
+}
+.f-tel, .f-redes, .f-icones, .f-email{
+    font-family: 'Poppins',sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 15px;
+    color: white;
+}
+.f-contato{
+    display: grid;
+}
+.f-icones a{
+    color: white;
+}
+.f-bottom{
+    margin: 20px 0;
+}
+@media (min-width: 900px){
+    .footer-links{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+    }
+    .f-contato{
+        display: flex;
+        gap: 2rem;
+    }
+    .f-bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+}:root {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    margin: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: white;
+    position: relative;
+    display: grid;
+}
+.barra{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-around;
+}
+.contato, .redes{
+    display: flex;
+    gap: 2rem;
+    margin: 10px 0 0 0;
+    color: #7d7d7d;
+}
+.redes, .redes a{
+    list-style: none;
+    color: #7d7d7d;
+}
+.titulo-modifier {
+    color: #468000;
+}
+.titulo {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0;
+}
+.titulo a:hover{
+    text-decoration: none;
+}
+.icon-w{
+    filter: invert(98%) sepia(2%) saturate(731%) hue-rotate(220deg) brightness(121%) contrast(100%);
+}
+.login-b{
+    color: white;
+    background-color: #468000;
+    border: 1px solid #468000;
+    border-radius: 5px;
+}
+@media(max-width: 700px){
+    .barra{
+        display: none;
+    }
+}
+.sand{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-right: solid white 1px;
+    padding-right: 1rem; 
+    margin-bottom: 2px;
+}
+.navbar{
+    /* background-color: black; */
+    font-family: 'Poppins', sans-serif;
+}
+.pais{
+    background-image: url(../assets/BR.jpg);
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+header{
+    background-image: url(../assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header > .container-fluid{
+    height: 600px;
+    background-repeat: norepeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    gap: 0;
+    margin-top: -60px;
+}
+.hero{
+    color: white;
+    padding: 50% 0 10%;
+    box-sizing: border-box;
+    height: 25rem;
+}
+.hero-text > p {
+    font-size: 15px;
+}
+.cta-filtro{
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 32px 0;
+}
+.cta-b{
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+}
+.cta-b:hover{
+    background-color: #cd7325;
+    border: 1px solid #cd7325;
+}
+.cta > .container-lg{
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, .2);
+}
+.col-md {
+    background-color: white;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: small;
+    margin: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 51px;
+    border-radius: 10px;
+    vertical-align: middle;
+    font-weight: 550;
+}
+.busca-b{
+    width: 100%;
+    height: 51px;
+    color: white;
+    background-color: #468000;
+    border: 0 transparent;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.banner {
+    height: 15%;
+    width: 100%;
+    background-color: transparent;
+}
+@media (min-width: 800px){
+    .hero{
+        padding: 400px 0 80px;
+    }
+}
+@media (min-width: 768px){
+    .col-md{
+        line-height: 10px;
+    }
+}
+@media (min-width: 900px){
+    form {
+        display: flex;
+    }
+    .banner {
+        display: none;
+        height: 0px;
+    }
+    .banner-2{
+        height: 100px !important;
+    }
+}
+article{
+    margin-top: 48px;
+    height: 570px;
+}
+article > p{
+    color:#cd7325;
+    margin-bottom: 3px;
+}
+article > h4{
+    font-weight: 500;
+}
+article{
+    padding: 50px 0;
+}
 .hoteis{
     width: 90%;
     height: 350px;
