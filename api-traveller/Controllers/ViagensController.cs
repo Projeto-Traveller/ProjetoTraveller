@@ -18,10 +18,10 @@ namespace api_traveller.Controllers
             _gulliverContext = gulliverContext;
         }
 
-        [HttpGet("PorNome")]
-        public IEnumerable<Viagem> GetViagemPorNome(string origem)
+        [HttpGet()]
+        public IEnumerable<Viagem> GetViagemPorNome()
         {
-            return _gulliverContext.Viagens.Where(viagem => viagem.Origem.ToUpperInvariant().Contains(origem.ToUpperInvariant()));
+            return _gulliverContext.Viagens;
         }
     }
 }
