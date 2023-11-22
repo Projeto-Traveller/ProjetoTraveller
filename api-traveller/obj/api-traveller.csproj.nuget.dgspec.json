@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repo\\ProjetoTraveller\\api-traveller\\api-traveller.csproj": {}
+    "C:\\Users\\Jin\\Documents\\FIAP\\Traveller\\api-traveller\\api-traveller.csproj": {}
   },
   "projects": {
-    "D:\\Repo\\ProjetoTraveller\\api-traveller\\api-traveller.csproj": {
+    "C:\\Users\\Jin\\Documents\\FIAP\\Traveller\\api-traveller\\api-traveller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\ProjetoTraveller\\api-traveller\\api-traveller.csproj",
+        "projectUniqueName": "C:\\Users\\Jin\\Documents\\FIAP\\Traveller\\api-traveller\\api-traveller.csproj",
         "projectName": "api-traveller",
-        "projectPath": "D:\\Repo\\ProjetoTraveller\\api-traveller\\api-traveller.csproj",
-        "packagesPath": "C:\\Users\\mseki\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\ProjetoTraveller\\api-traveller\\obj\\",
+        "projectPath": "C:\\Users\\Jin\\Documents\\FIAP\\Traveller\\api-traveller\\api-traveller.csproj",
+        "packagesPath": "C:\\Users\\Jin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jin\\Documents\\FIAP\\Traveller\\api-traveller\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mseki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }

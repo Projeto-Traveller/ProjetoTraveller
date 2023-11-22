@@ -1,0 +1,12 @@
+{
+  "name": "traveller",
+  "version": "1.0.0",
+  "description": "Site teste\r Website: https://blue-hill-04f4a3d10.3.azurestaticapps.net/\r API Documentation: https://api-traveller.azurewebsites.net/swagger/index.html",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
